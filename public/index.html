@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <script>
+      function jsonpCallback(data) {
+        console.log("jsonpCallback result:", data);
+      }
+    </script>
+    <script src="http://localhost:3000/data?callback=jsonpCallback"></script>
+  </head>
+  <body>
+    page content
+  </body>
+</html>
